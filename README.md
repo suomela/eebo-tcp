@@ -13,9 +13,9 @@ Make sure all TCP XML files are available in the subdirectory `tcp-xml`:
     cd tcp-xml
     sh ../tcp-texts/graball.sh
 
-Install GNU coreutils from homebrew:
+Install GNU coreutils and pcre from homebrew:
 
-    brew install coreutils
+    brew install coreutils pcre
 
 
 Listing EEBO texts
