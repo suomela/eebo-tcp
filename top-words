@@ -1,0 +1,3 @@
+#!/bin/sh
+
+gtr A-Z a-z | gsort | guniq -c | gsort -rn

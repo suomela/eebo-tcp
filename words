@@ -1,0 +1,3 @@
+#!/bin/sh
+
+xml/xml-plaintext TEI/text "$@" | pcregrep -o '([a-zA-Z]|ꝭ)+'

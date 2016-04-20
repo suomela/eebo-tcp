@@ -1,0 +1,4 @@
+#!/bin/sh
+
+./list-eebo-tcp "$@" | sed 's,\(.*\),tcp-xml/\1.xml,'
+
