@@ -1,0 +1,3 @@
+[submodule "tcp-texts"]
+	path = tcp-texts
+	url = https://github.com/textcreationpartnership/Texts.git
