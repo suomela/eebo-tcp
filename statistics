@@ -1,0 +1,6 @@
+#!/bin/sh
+
+mkdir -p stat
+time ./list-eebo-tcp-files | xargs xml/xml-tags TEI/teiHeader | gsort | guniq -c > stat/header-tags.txt
+time ./list-eebo-tcp-files | xargs xml/xml-tags TEI/text | gsort | guniq -c > stat/text-tags.txt
+time ./list-eebo-tcp-files | xargs ./words | ./top-words > stat/words.txt
