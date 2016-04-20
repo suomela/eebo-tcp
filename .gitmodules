@@ -1,3 +1,6 @@
 [submodule "tcp-texts"]
 	path = tcp-texts
 	url = https://github.com/textcreationpartnership/Texts.git
+[submodule "xml"]
+	path = xml
+	url = https://github.com/suomela/xml.git
