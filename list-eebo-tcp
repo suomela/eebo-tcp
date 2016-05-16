@@ -20,6 +20,8 @@ def main():
     args = Args()
     start = args.get_int()
     end = args.get_int()
+    page_min = args.get_int()
+    page_max = args.get_int()
 
     with open('tcp-texts/TCP.json') as f:
         data = json.load(f)
@@ -38,6 +40,15 @@ def main():
             if start is not None and date < start:
                 continue
             if end is not None and date > end:
+                continue
+        if page_min is not None or page_max is not None:
+            try:
+                pages = int(e["Pages"])
+            except ValueError:
+                continue
+            if page_min is not None and pages < page_min:
+                continue
+            if page_max is not None and pages > page_max:
                 continue
         print tcp
 

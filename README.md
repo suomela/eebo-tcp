@@ -27,7 +27,7 @@ All freely available files:
 
 All freely available files with a well-defined date in the 1600s:
 
-    ./list-eebo-tcp 1500 1599
+    ./list-eebo-tcp 1600 1699
 
 Output:
 
@@ -48,6 +48,11 @@ Output:
     tcp-xml/A00011.xml
     tcp-xml/A00012.xml
     ...
+
+All freely available files with a well-defined date in the 1600s,
+with 1 to 8 pages:
+
+    ./list-eebo-tcp 1600 1699 1 8
 
 
 Processing EEBO texts
